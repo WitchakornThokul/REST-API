@@ -75,11 +75,6 @@ app.post('/tax', (req, res) => {
   const taxToPay = Math.max(taxCalculated - wht, 0);
 
   res.json({
-    income,
-    deduction,
-    taxableIncome: taxable,
-    taxCalculated,
-    wht,
     taxToPay
   });
 });
@@ -120,13 +115,7 @@ app.post('/tax/calculations', (req, res) => {
   const taxToPay = Math.max(Math.round(taxCalculated - (wht || 0)), 0);
 
   return res.json({
-    totalIncome,
-    deduction,
-    taxableIncome: taxable,
-    taxCalculated: Math.round(taxCalculated),
-    wht: wht || 0,
-    tax: taxToPay,
-    taxLevel
+    tax: taxToPay
   });
 });
 
