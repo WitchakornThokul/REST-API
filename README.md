@@ -1,5 +1,5 @@
 #   Tax Calculator API
-        - REST API คำนวณภาษีเงงินได้ส่วนบุคคล
+        - REST API คำนวณภาษีเงินได้ส่วนบุคคล
 
 #   เทคโนโลยีที่ใช้ 
         - JavaScript
